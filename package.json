@@ -1,0 +1,11 @@
+{
+  "name": "jquery.autoinit",
+  "version": "0.1.0",
+  "main": "jquery.autoinit",
+  "description": "Provides a onload document search of the page to auto intialize elements.",
+  "homepage": "https://github.com/bluora/jquery.autoinit",
+  "keywords":[
+    "jquery",
+    "onload"
+  ]
+}
