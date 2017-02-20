@@ -1,3 +1,6 @@
 window.extensions_initializer.redactor = function() {
-    $(this).redactor();
+    if (!$(this).hasClass('redactor-applied')) {
+        $(this).redactor();
+        $(this).addClass('redactor-applied');
+    }
 }
