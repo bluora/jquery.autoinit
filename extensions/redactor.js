@@ -4,6 +4,9 @@ window.extensions_initializer.redactor = function() {
         if ($(this).data('toolbar-buttons')) {
             options['buttons'] = $(this).data('toolbar-buttons');
         }
+        if ($(this).data('toolbar-plugins')) {
+            options['plugins'] = $(this).data('toolbar-plugins');
+        }
         $(this).redactor(options);
         $(this).addClass('redactor-applied');
     }
