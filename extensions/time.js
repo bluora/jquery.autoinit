@@ -3,7 +3,7 @@ window.extensions_initializer.time = function() {
     var current_element = $(this);
     element_id = current_element.attr('id');
     if (this.nodeName.toLowerCase() == 'input') {
-        if (current_element.hasClass('hastimepicker')) {
+        if (current_element.hasClass('ui-timepicker-input')) {
             data = current_element.data();
             current_value = current_element.val();
             current_element.replaceWith(current_element.data('original'));
@@ -16,9 +16,6 @@ window.extensions_initializer.time = function() {
         } else {
             current_element.data('original', $("<div />").append(current_element.clone()).html());
         }
-            
-        var options = {};
-        options['timeFormat'] = 'H:i';
-        $(current_element).timepicker(options);
+        $(current_element).timepicker({});
     }
 }
